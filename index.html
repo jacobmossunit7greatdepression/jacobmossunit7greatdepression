@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 7: The Great Depression and the New Deal (1933-1939) - Jacob Moss</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2E2E2E; background-color: #F4EFE6; }
+        
+        /* Navigation */
+        nav { background: linear-gradient(to bottom, #4A3B2A 0%, #3d3020 100%); padding: 1.2rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 8px rgba(0,0,0,0.3); border-bottom: 2px solid #8C3A2B; }
+        nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: center; }
+        nav a { color: #FBF8F2; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s ease; cursor: pointer; padding: 0.3rem 0.8rem; border-radius: 4px; }
+        nav a:hover { color: #F4EFE6; background-color: rgba(200, 183, 154, 0.2); }
+        
+        html { scroll-behavior: smooth; }
+        .page-section:target, #landing:target, #event1:target, #event2:target, #event3:target, #event4:target { scroll-margin-top: 100px; }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 2.5rem; }
+        .page-section { background: #FBF8F2; margin: 2.5rem 0; padding: 3.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.12); border: 1px solid #C8B79A; }
+        
+        /* Header */
+        .page-header { background: linear-gradient(135deg, #4A3B2A 0%, #2E2E2E 100%); color: #FBF8F2; padding: 4.5rem 2rem; text-align: center; margin-bottom: 2.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+        .page-header h1 { font-size: 2.8rem; margin-bottom: 0.8rem; font-weight: 700; letter-spacing: 0.5px; }
+        .page-header .unit-number { font-size: 1.3rem; opacity: 0.95; color: #C8B79A; font-weight: 600; letter-spacing: 1px; }
+        .page-header .student-info { margin-top: 1.2rem; font-size: 1.15rem; color: #C8B79A; font-weight: 500; }
+        
+        /* Hero Image */
+        .hero-image { width: 100%; height: 450px; background-size: cover; background-position: center; border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 3px solid #C8B79A; }
+        .image-caption { text-align: center; color: #8A8A8A; font-size: 0.95rem; font-style: italic; margin-bottom: 2.5rem; }
+        .image-caption a { color: #2F4B63; text-decoration: none; border-bottom: 1px solid #2F4B63; }
+        .image-caption a:hover { color: #1F3547; border-bottom-color: #1F3547; }
+        
+        /* Typography */
+        h2 { color: #4A3B2A; border-bottom: 4px solid #2F4B63; padding-bottom: 0.7rem; margin-bottom: 2rem; font-size: 2rem; font-weight: 700; }
+        h3 { color: #4A3B2A; margin-top: 2.5rem; margin-bottom: 1.2rem; font-size: 1.5rem; font-weight: 600; }
+        h4 { color: #4A3B2A; margin-top: 1.8rem; margin-bottom: 1rem; font-size: 1.2rem; font-weight: 600; }
+        
+        /* Inquiry Statement */
+        .inquiry-statement { background: linear-gradient(to right, #FBF8F2 0%, #F4EFE6 100%); padding: 1.8rem; border-left: 5px solid #8C3A2B; margin: 2rem 0; font-style: italic; color: #2E2E2E; box-shadow: 0 2px 6px rgba(0,0,0,0.08); border-radius: 5px; font-size: 1.05rem; line-height: 1.8; }
+        
+        /* Questions */
+        .question-block { margin: 2rem 0; padding: 1.8rem; background: linear-gradient(to bottom, #FBF8F2 0%, #F4EFE6 100%); border-radius: 8px; border: 1px solid #C8B79A; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+        .question { font-weight: 700; color: #4A3B2A; margin-bottom: 0.8rem; font-size: 1.05rem; }
+        .answer-space { background: white; padding: 1.2rem; border: 2px dashed #C8B79A; min-height: 100px; border-radius: 6px; color: #8A8A8A; font-style: italic; font-size: 0.98rem; }
+        
+        /* Timeline */
+        .timeline { margin: 2.5rem 0; }
+        .timeline-item { display: flex; margin: 1.8rem 0; padding: 1.3rem; background: #FBF8F2; border-radius: 8px; border-left: 5px solid #2F4B63; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: transform 0.2s ease; }
+        .timeline-item:hover { transform: translateX(5px); }
+        .timeline-date { font-weight: 700; color: #4A3B2A; min-width: 280px; font-size: 1.02rem; }
+        .timeline-description { flex: 1; background: white; padding: 1rem; border: 2px dashed #C8B79A; border-radius: 6px; color: #8A8A8A; font-style: italic; }
+        
+        /* OPCVL Table */
+        .opcvl-table { width: 100%; border-collapse: collapse; margin: 2rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+        .opcvl-table th { background: linear-gradient(to bottom, #4A3B2A 0%, #3d3020 100%); color: #FBF8F2; padding: 1.2rem; text-align: left; font-weight: 600; font-size: 1.05rem; }
+        .opcvl-table td { border: 2px dashed #C8B79A; padding: 1.2rem; background: white; color: #8A8A8A; font-style: italic; }
+        
+        /* Source Info */
+        .source-info { background: linear-gradient(to right, #FBF8F2 0%, #F4EFE6 100%); padding: 1.8rem; border-radius: 8px; margin: 2rem 0; border: 2px solid #C8B79A; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+        .source-info p { margin: 0.6rem 0; line-height: 1.6; }
+        .source-info strong { color: #4A3B2A; font-weight: 700; }
+        .source-info ul { margin-left: 1.8rem; margin-top: 0.8rem; }
+        .source-info li { margin: 0.5rem 0; color: #2E2E2E; }
+        
+        /* Dividers */
+        .section-divider { border: none; border-top: 3px solid #C8B79A; margin: 3.5rem 0; opacity: 0.7; }
+        
+        /* Event Header */
+        .event-header { background: linear-gradient(135deg, #2F4B63 0%, #1F3547 100%); color: #FBF8F2; padding: 2.5rem; border-radius: 10px; margin-bottom: 2.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border-bottom: 4px solid #8C3A2B; }
+        .event-header h2 { color: #FBF8F2; border: none; margin: 0; font-size: 2.2rem; }
+        
+        /* Reflection Space */
+        .reflection-space { background: linear-gradient(to bottom, #FBF8F2 0%, #fff9e6 100%); border: 3px solid #8C3A2B; padding: 2.5rem; border-radius: 10px; margin: 2.5rem 0; box-shadow: 0 3px 10px rgba(140, 58, 43, 0.15); }
+        .reflection-space h3 { color: #8C3A2B; margin-top: 0; font-size: 1.6rem; }
+        .reflection-space ul { margin-left: 1.8rem; margin-top: 0.8rem; }
+        .reflection-space li { margin: 0.5rem 0; color: #2E2E2E; }
+        
+        /* Visual Placeholder */
+        .visual-placeholder { width: 100%; height: 350px; background: linear-gradient(135deg, #F4EFE6 0%, #e8e0d0 100%); border: 3px dashed #C8B79A; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin: 1.5rem 0; color: #8A8A8A; font-style: italic; text-align: center; padding: 2.5rem; font-size: 1.1rem; }
+        
+        /* Links */
+        a:not(nav a):not(.image-caption a) { color: #2F4B63; text-decoration: none; border-bottom: 1px solid transparent; transition: all 0.2s ease; }
+        a:not(nav a):not(.image-caption a):hover { color: #1F3547; border-bottom-color: #1F3547; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul { flex-direction: column; gap: 1rem; }
+            .timeline-item { flex-direction: column; }
+            .timeline-date { margin-bottom: 0.8rem; min-width: auto; }
+            .page-header h1 { font-size: 2rem; }
+            .container { padding: 1.5rem; }
+            .page-section { padding: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#event1">Event 1: Great Depression</a></li>
+            <li><a href="#event2">Event 2: Dust Bowl</a></li>
+            <li><a href="#event3">Event 3: New Deal</a></li>
+            <li><a href="#event4">Event 4: Leadership</a></li>
+        </ul>
+    </nav>
+
+    <div id="landing">
+        <div class="page-header">
+            <div class="unit-number">UNIT 7</div>
+            <h1>The Great Depression and the New Deal (1933-1939)</h1>
+            <div class="student-info">Jacob Moss | U.S. History Honors | Period 8</div>
+        </div>
+        <div class="container">
+            <div class="page-section">
+                <div class="hero-image" style="background-image: url('https://cdn.thecollector.com/wp-content/uploads/2023/11/dust-bowl-great-depression.jpg?width=2560&height=1440&quality=100&dpr=2');"></div>
+                <p class="image-caption">Dust Storm Approaching, 1930s | Source: <a href="https://cdn.thecollector.com/wp-content/uploads/2023/11/dust-bowl-great-depression.jpg" target="_blank">The Collector</a></p>
+                
+                <h2>Unit Inquiry Statement</h2>
+                <div class="inquiry-statement">The Great Depression and the New Deal highlight how systemic crises demand innovative governance and the balance between individual needs and societal responsibilities.</div>
+                
+                <h2>Related Questions</h2>
+                <div class="question-block">
+                    <div class="question">Factual Question: What were the key causes of the Great Depression?</div>
+                    <div class="answer-space">[Your answer here - minimum one succinct and well-articulated sentence]</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">Conceptual Question: How does government intervention impact economic recovery and social wellbeing?</div>
+                    <div class="answer-space">[Your answer here - minimum one succinct and well-articulated sentence]</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">Debatable Question: Did the New Deal effectively resolve the challenges of the Great Depression? Why or why not?</div>
+                    <div class="answer-space">[Your answer here - minimum one succinct and well-articulated sentence]</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">Faith-Related Question: How do Christian principles of stewardship and care for others align with responses to economic crises?</div>
+                    <div class="answer-space">[Your answer here - minimum one succinct and well-articulated sentence]</div>
+                </div>
+                
+                <hr class="section-divider">
+                
+                <h2>Timeline of Major Events</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">October 29, 1929 - Black Tuesday</div>
+                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">November 8, 1932 - Franklin D. Roosevelt elected POTUS</div>
+                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">March 4, 1933 - Franklin D. Roosevelt inaugurated POTUS</div>
+                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">March 6-13, 1933 - Bank Holiday</div>
+                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">March 12, 1933 - FDR's first 'Fireside Chat'</div>
+                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">April 14, 1935 - Black Sunday</div>
+                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">August 14, 1935 - Social Security Act signed into Law</div>
+                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                    </div>
+                </div>
+                
+                <hr class="section-divider">
+                
+                <div class="reflection-space">
+                    <h3>End-of-Unit Reflection</h3>
+                    <p><strong>Instructions:</strong> Complete at the end of the unit. Discuss in detail the things that stood out most to you, the new perspectives you have gained, and your understanding of the historical events.</p>
+                    <p><strong>Choose ONE format:</strong></p>
+                    <ul>
+                        <li><strong>Written reflection</strong> - 2-3 well-crafted paragraphs with specific examples</li>
+                        <li><strong>Audio clip</strong> - 2+ minutes with specific examples</li>
+                        <li><strong>Video clip</strong> - 2+ minutes with specific examples</li>
+                    </ul>
+                    <div class="answer-space" style="min-height: 220px; margin-top: 1.5rem;">[Your reflection will go here at the end of the unit]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const events = [
+            {
+                id: 'event1',
+                num: 1,
+                name: 'The Great Depression',
+                inquiry: 'Societal responses to crises, such as the Great Depression, reveal the evolving dynamics of systems and human resilience, reflecting historical lessons applicable to modern economic challenges.',
+                questions: [
+                    'Factual Question: What were the main causes of the Great Depression?',
+                    'Conceptual Question: How do economic policies impact global interactions and societies, as well as individuals?',
+                    'Debatable Question: Is the impact of the Great Depression a testament to the failure of capitalist economic structures? When might we see the next economic depression?'
+                ],
+                sources: ['Doc 1: Herbert Hoover\'s "Rugged Individualism" speech', 'Doc 2: Letter to President Roosevelt', 'Doc 3: "Begging," article by Anne Winn Stevens', 'Doc 4: The \'Bonus Army\' invades Washington, D.C.']
+            },
+            {
+                id: 'event2',
+                num: 2,
+                name: 'The Dust Bowl',
+                inquiry: 'Human interactions with the environment can lead to significant and lasting changes, as evidenced by the Dust Bowl\'s impact on society, economy, and the natural world.',
+                questions: [
+                    'Factual Question: What were the main causes of the Dust Bowl?',
+                    'Conceptual Question: How do human, business, and government-led activities interact with and influence environmental conditions?',
+                    'Debatable Question: Could the devastation of the Dust Bowl have been prevented with the knowledge and technology of the time?',
+                    'Faith-Related Question: To what extent does mankind have a responsibility to use natural resources wisely and with discretion? (Hint: Read Genesis 1:28 and Genesis 2:15)'
+                ],
+                sources: ['Doc 1: Letters from the Dust Bowl', 'Doc 2: So Long, It\'s Been Good To Know Yuh (Song lyrics by Woody Guthrie)', 'Doc 3: California Odyssey - Interviews', 'Doc 4: Pittson Gazette newspaper, May 11, 1934']
+            },
+            {
+                id: 'event3',
+                num: 3,
+                name: 'The New Deal',
+                inquiry: 'The New Deal represents a transformative period in American history where the government took unprecedented steps to combat economic adversity, affecting various groups and altering the nation\'s political landscape.',
+                questions: [
+                    'Factual Question: What was the \'New Deal,\' and how did it propose to help the U.S. economy?',
+                    'Conceptual Question: How did the New Deal redefine the role of the American government in the economy and social welfare, and what implications did this shift have on the relationship between the state and its citizens?',
+                    'Debatable Question: To what extent is it the government\'s responsibility to provide economic stability for its people?',
+                    'Faith-Related Question: How do the goals of the New Deal—such as helping the poor, providing jobs, and protecting the vulnerable—reflect Christian teachings about caring for those in need, and what responsibilities do individuals and governments have in living out those values?'
+                ],
+                sources: ['Doc 1: FDR Speech Transcript (Statement on Signing the Social Security Act)', 'Doc 2: FDR Fireside Chat Transcript on The New Deal (May 7, 1933)', 'Doc 3: FDR Fireside Chat Transcript (On the Purposes and Foundations of the Recovery Program, July 24, 1933)', 'Doc 4: FDR Fireside Chat Transcript (On the Works Relief Program, April 28, 1935)']
+            },
+            {
+                id: 'event4',
+                num: 4,
+                name: 'Leadership in the Midst of Crisis',
+                inquiry: 'Leadership communication during times of crisis can shape societal resilience, foster unity, and redefine the relationship between citizens and their leaders.',
+                questions: [
+                    'Factual Question: Why is it important that leaders address the nation in times of crisis?',
+                    'Conceptual Question: What does strong leadership communication look like?',
+                    'Debatable Question: Should leaders communicate with empathy and care, or as matter-of-fact? Why?',
+                    'Faith-Related Question: In what ways does the leadership style of Jesus standout in stark contrast to political leaders in our current time?'
+                ],
+                sources: ['1: President Kennedy Announces Soviet Missiles in Cuba, November 1963', '2: President Reagan Announces Explosion of Space Shuttle, January 1986', '3: President Clinton Announces the Bombing of the Oklahoma City Federal Building, April 1995', '4: President Bush Announces the Destruction of the World Trade Center, September 2001', '5: President Obama Announces the School Shooting at Sandy Hook Elementary, December 2012'],
+                special: true
+            }
+        ];
+
+        events.forEach(evt => {
+            const section = document.createElement('div');
+            section.id = evt.id;
+            section.innerHTML = `
+                <div class="container">
+                    <div class="page-section">
+                        <div class="event-header"><h2>Event #${evt.num}: ${evt.name}</h2></div>
+                        
+                        <h2>SECTION 1: Exploring Macro Concepts</h2>
+                        <div class="inquiry-statement"><strong>Inquiry Statement:</strong> ${evt.inquiry}</div>
+                        ${evt.questions.map(q => `
+                            <div class="question-block">
+                                <div class="question">${q}</div>
+                                <div class="answer-space">[Your answer - minimum 2 well-crafted sentences with detailed rationale]</div>
+                            </div>
+                        `).join('')}
+                        
+                        <hr class="section-divider">
+                        <h2>SECTION 2: Exploring Primary & Secondary Sources</h2>
+                        
+                        ${evt.special ? `
+                            <h3>Primary Sources - Presidential Crisis Addresses</h3>
+                            <div class="source-info">
+                                <p><strong>Complete a single OPCVL chart for EACH of the following Primary Sources:</strong></p>
+                                <ul>${evt.sources.map(s => `<li>${s}</li>`).join('')}</ul>
+                            </div>
+                            ${evt.sources.map((s, i) => `
+                                <h4>Source ${s}</h4>
+                                <table class="opcvl-table">
+                                    <thead><tr><th>Origin</th><th>Purpose</th><th>Content</th><th>Value</th><th>Limitations</th></tr></thead>
+                                    <tbody><tr><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td></tr></tbody>
+                                </table>
+                            `).join('')}
+                            <h4>Analysis Questions</h4>
+                            <p style="color: #8A8A8A; font-style: italic; margin-bottom: 1rem;">(You may combine multiple sources in each response)</p>
+                            ${['1. How might this source have influenced people\'s opinions, actions, or beliefs when it was released?', '2. How does understanding the historical context change your interpretation of this source, or the historical event?', '3. How does this document either affirm or negate our current understanding of the event? What (if anything) has changed in our understanding of the event since this source was created?', '4. What new questions does this source make you want to explore or research further?'].map(q => `
+                                <div class="question-block">
+                                    <div class="question">${q}</div>
+                                    <div class="answer-space" style="min-height:150px;">[Your answer - minimum one well-crafted paragraph with details and examples]</div>
+                                </div>
+                            `).join('')}
+                        ` : `
+                            <h3>Primary Source Document #1</h3>
+                            <div class="source-info">
+                                <p><strong>Choose ONE of the following Primary Sources:</strong></p>
+                                <ul>${evt.sources.map(s => `<li>${s}</li>`).join('')}</ul>
+                                <p style="margin-top: 1rem;"><strong>Selected Source:</strong> <span style="color:#8A8A8A;font-style:italic;">[Write source name here]</span></p>
+                            </div>
+                            <h4>OPCVL Chart</h4>
+                            <table class="opcvl-table">
+                                <thead><tr><th>Origin</th><th>Purpose</th><th>Content</th><th>Value</th><th>Limitations</th></tr></thead>
+                                <tbody><tr><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td></tr></tbody>
+                            </table>
+                            <h4>Analysis Questions</h4>
+                            ${['1. How might this source have influenced people\'s opinions, actions, or beliefs when it was released?', '2. How does understanding the historical context change your interpretation of this source, or the historical event?', '3. How does this document either affirm or negate our current understanding of the event? What (if anything) has changed in our understanding of the event since this source was created?', '4. What new questions does this source make you want to explore or research further?'].map(q => `
+                                <div class="question-block">
+                                    <div class="question">${q}</div>
+                                    <div class="answer-space" style="min-height:150px;">[Your answer - minimum one well-crafted paragraph with details and examples]</div>
+                                </div>
+                            `).join('')}
+                            
+                            <hr class="section-divider">
+                            <h3>Primary Source Document #2 - JSTOR Article</h3>
+                            <div class="source-info">
+                                <p><strong>Instructions:</strong> Use JSTOR to search for a source related to "${evt.name}"</p>
+                                <p><strong>Selected Source:</strong> <span style="color:#8A8A8A;font-style:italic;">[Write source name and link here]</span></p>
+                            </div>
+                            <h4>OPCVL Chart</h4>
+                            <table class="opcvl-table">
+                                <thead><tr><th>Origin</th><th>Purpose</th><th>Content</th><th>Value</th><th>Limitations</th></tr></thead>
+                                <tbody><tr><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td></tr></tbody>
+                            </table>
+                            <h4>Analysis Questions</h4>
+                            ${['1. How might this source have influenced people\'s opinions, actions, or beliefs when it was released?', '2. How does understanding the historical context change your interpretation of this source, or the historical event?', '3. How does this document either affirm or negate our current understanding of the event? What (if anything) has changed in our understanding of the event since this source was created?', '4. What new questions does this source make you want to explore or research further?'].map(q => `
+                                <div class="question-block">
+                                    <div class="question">${q}</div>
+                                    <div class="answer-space" style="min-height:150px;">[Your answer - minimum one well-crafted paragraph]</div>
+                                </div>
+                            `).join('')}
+                            
+                            <hr class="section-divider">
+                            <h3>Primary Source Document #3 - Non-Text Source</h3>
+                            <div class="source-info">
+                                <p><strong>Choose ONE non-text oriented source:</strong> Political cartoon, photograph, archival footage, or advertising from the time of the historical event</p>
+                            </div>
+                            <div class="visual-placeholder">[INSERT YOUR CHOSEN IMAGE/VISUAL SOURCE HERE]</div>
+                            <h4>OPCVL Chart</h4>
+                            <table class="opcvl-table">
+                                <thead><tr><th>Origin</th><th>Purpose</th><th>Content</th><th>Value</th><th>Limitations</th></tr></thead>
+                                <tbody><tr><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td></tr></tbody>
+                            </table>
+                            <h4>Analysis Questions</h4>
+                            ${['1. Source Description: Describe the source (including media type, year, and a general description).', '2. Making Inferences: What inferences can you draw based on the source and your prior knowledge of the historical event?', '3. Revisiting the Event: How have attitudes or information changed since the time the original source was created?'].map(q => `
+                                <div class="question-block">
+                                    <div class="question">${q}</div>
+                                    <div class="answer-space" style="min-height:150px;">[Your answer - minimum one well-crafted paragraph]</div>
+                                </div>
+                            `).join('')}
+                            
+                            <hr class="section-divider">
+                            <h2>SECTION 3: Interpreting Visual Data</h2>
+                            <div class="source-info">
+                                <p><strong>Source Title:</strong> <span style="color:#8A8A8A;font-style:italic;">[Graph/Chart title]</span></p>
+                                <p><strong>Source Type:</strong> <span style="color:#8A8A8A;font-style:italic;">[Graph/Chart/Infographic]</span></p>
+                                <p><strong>Source Link:</strong> <span style="color:#8A8A8A;font-style:italic;">[URL]</span></p>
+                                <p><strong>Source Date:</strong> <span style="color:#8A8A8A;font-style:italic;">[Date]</span></p>
+                            </div>
+                            <div class="visual-placeholder">[INSERT YOUR GRAPH/CHART/VISUAL DATA HERE]</div>
+                            ${['1. In a single, succinct sentence summarize the data\'s CONTENT.', '2. In a single, succinct sentence summarize the data\'s FINDINGS.', '3. Based on the data\'s SOURCE (how the source gathers and calculates its data), should the data be deemed reliable or unreliable? Why?', '4. When it comes to the data, what do you find most interesting or surprising? Explain.'].map(q => `
+                                <div class="question-block">
+                                    <div class="question">${q}</div>
+                                    <div class="answer-space">${q.includes('single, succinct sentence') ? '[Your one-sentence summary]' : '[Your analysis paragraph]'}</div>
+                                </div>
+                            `).join('')}
+                            
+                            <hr class="section-divider">
+                            <h2>SECTION 4: Connecting the Historical Event to Today</h2>
+                            <div class="source-info">
+                                <p><strong>Find a credible article from 2020 or later related to this historical event or theme</strong></p>
+                                <p><strong>Source Title:</strong> <span style="color:#8A8A8A;font-style:italic;">[Article title]</span></p>
+                                <p><strong>Source Type:</strong> <span style="color:#8A8A8A;font-style:italic;">[News article/Opinion piece/Feature]</span></p>
+                                <p><strong>Source Link:</strong> <span style="color:#8A8A8A;font-style:italic;">[URL]</span></p>
+                                <p><strong>Source Date:</strong> <span style="color:#8A8A8A;font-style:italic;">[2020 or later]</span></p>
+                            </div>
+                            <h4>OPCVL Chart</h4>
+                            <table class="opcvl-table">
+                                <thead><tr><th>Origin</th><th>Purpose</th><th>Content</th><th>Value</th><th>Limitations</th></tr></thead>
+                                <tbody><tr><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td><td>[Your data here]</td></tr></tbody>
+                            </table>
+                            ${['1. Is this article a report (fact-based, current events), feature article (in-depth, human interest, or investigative), or an opinion piece (editorials, columns, and letters to the editor)? How can you tell?', '2. Explain why you agree - or disagree - with the author\'s perspective.', '3. If given the opportunity to ask the author about his/her article, what open-ended question would you ask?'].map(q => `
+                                <div class="question-block">
+                                    <div class="question">${q}</div>
+                                    <div class="answer-space" style="min-height:120px;">[Your answer - minimum 2-3 well-crafted sentences with details and examples]</div>
+                                </div>
+                            `).join('')}
+                        `}
+                        
+                        <hr class="section-divider">
+                        <h2>SECTION 5: So What? Why is this relevant today?</h2>
+                        <div class="answer-space" style="min-height:350px;">
+                            [Compose a well-crafted response - MINIMUM THREE PARAGRAPHS. Include details and examples from the event/theme that support your position. Avoid personal pronouns (I, you, etc.) and over-generalizations. Focus on grammar, spelling, organization, clarity of thought, and use of specific examples.]
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(section);
+        });
+    </script>
+</body>
+</html>
