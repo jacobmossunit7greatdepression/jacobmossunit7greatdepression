@@ -6,83 +6,83 @@
     <title>Unit 7: The Great Depression and the New Deal (1933-1939) - Jacob Moss</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2E2E2E; background-color: #F4EFE6; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2B1F1A; background-color: #6B2E1E; }
         
         /* Navigation */
-        nav { background: linear-gradient(to bottom, #4A3B2A 0%, #3d3020 100%); padding: 1.2rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 8px rgba(0,0,0,0.3); border-bottom: 2px solid #8C3A2B; }
+        nav { background-color: #6B2E1E; padding: 1.2rem 2rem; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid #B08A7A; }
         nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: center; }
-        nav a { color: #FBF8F2; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s ease; cursor: pointer; padding: 0.3rem 0.8rem; border-radius: 4px; }
-        nav a:hover { color: #F4EFE6; background-color: rgba(200, 183, 154, 0.2); }
+        nav a { color: #E3D2C2; text-decoration: none; font-weight: 600; font-size: 1.05rem; padding: 0.3rem 0.8rem; border-radius: 4px; }
+        nav a:hover { color: #B08A7A; }
         
         html { scroll-behavior: smooth; }
         .page-section:target, #landing:target, #event1:target, #event2:target, #event3:target, #event4:target { scroll-margin-top: 100px; }
         
         .container { max-width: 1200px; margin: 0 auto; padding: 2.5rem; }
-        .page-section { background: #FBF8F2; margin: 2.5rem 0; padding: 3.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.12); border: 1px solid #C8B79A; }
+        .page-section { background-color: #E3D2C2; margin: 2.5rem 0; padding: 3.5rem; border-radius: 8px; border: 1px solid #9A9F8B; }
         
         /* Header */
-        .page-header { background: linear-gradient(135deg, #4A3B2A 0%, #2E2E2E 100%); color: #FBF8F2; padding: 4.5rem 2rem; text-align: center; margin-bottom: 2.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-        .page-header h1 { font-size: 2.8rem; margin-bottom: 0.8rem; font-weight: 700; letter-spacing: 0.5px; }
-        .page-header .unit-number { font-size: 1.3rem; opacity: 0.95; color: #C8B79A; font-weight: 600; letter-spacing: 1px; }
-        .page-header .student-info { margin-top: 1.2rem; font-size: 1.15rem; color: #C8B79A; font-weight: 500; }
+        .page-header { background-color: #6B2E1E; color: #E3D2C2; padding: 4.5rem 2rem; text-align: center; margin-bottom: 2.5rem; border-bottom: 3px solid #B08A7A; }
+        .page-header h1 { font-size: 2.8rem; margin-bottom: 0.8rem; font-weight: 700; letter-spacing: 0.5px; color: #E3D2C2; }
+        .page-header .unit-number { font-size: 1.3rem; color: #B08A7A; font-weight: 600; letter-spacing: 1px; }
+        .page-header .student-info { margin-top: 1.2rem; font-size: 1.15rem; color: #E3D2C2; font-weight: 500; }
         
         /* Hero Image */
-        .hero-image { width: 100%; height: 450px; background-size: cover; background-position: center; border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 3px solid #C8B79A; }
-        .image-caption { text-align: center; color: #8A8A8A; font-size: 0.95rem; font-style: italic; margin-bottom: 2.5rem; }
-        .image-caption a { color: #2F4B63; text-decoration: none; border-bottom: 1px solid #2F4B63; }
-        .image-caption a:hover { color: #1F3547; border-bottom-color: #1F3547; }
+        .hero-image { width: 100%; height: 450px; background-size: cover; background-position: center; border-radius: 8px; margin-bottom: 1rem; border: 1px solid #9A9F8B; }
+        .image-caption { text-align: center; color: #2B1F1A; font-size: 0.95rem; font-style: italic; margin-bottom: 2.5rem; }
+        .image-caption a { color: #6B2E1E; text-decoration: underline; }
+        .image-caption a:hover { color: #B08A7A; }
         
         /* Typography */
-        h2 { color: #4A3B2A; border-bottom: 4px solid #2F4B63; padding-bottom: 0.7rem; margin-bottom: 2rem; font-size: 2rem; font-weight: 700; }
-        h3 { color: #4A3B2A; margin-top: 2.5rem; margin-bottom: 1.2rem; font-size: 1.5rem; font-weight: 600; }
-        h4 { color: #4A3B2A; margin-top: 1.8rem; margin-bottom: 1rem; font-size: 1.2rem; font-weight: 600; }
+        h2 { color: #2B1F1A; border-bottom: 2px solid #B08A7A; padding-bottom: 0.7rem; margin-bottom: 2rem; font-size: 2rem; font-weight: 700; }
+        h3 { color: #2B1F1A; margin-top: 2.5rem; margin-bottom: 1.2rem; font-size: 1.5rem; font-weight: 600; }
+        h4 { color: #2B1F1A; margin-top: 1.8rem; margin-bottom: 1rem; font-size: 1.2rem; font-weight: 600; }
         
         /* Inquiry Statement */
-        .inquiry-statement { background: linear-gradient(to right, #FBF8F2 0%, #F4EFE6 100%); padding: 1.8rem; border-left: 5px solid #8C3A2B; margin: 2rem 0; font-style: italic; color: #2E2E2E; box-shadow: 0 2px 6px rgba(0,0,0,0.08); border-radius: 5px; font-size: 1.05rem; line-height: 1.8; }
+        .inquiry-statement { background-color: #E3D2C2; padding: 1.8rem; border-left: 4px solid #6B2E1E; margin: 2rem 0; font-style: italic; color: #2B1F1A; border-radius: 4px; font-size: 1.05rem; line-height: 1.8; border: 1px solid #9A9F8B; }
         
         /* Questions */
-        .question-block { margin: 2rem 0; padding: 1.8rem; background: linear-gradient(to bottom, #FBF8F2 0%, #F4EFE6 100%); border-radius: 8px; border: 1px solid #C8B79A; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
-        .question { font-weight: 700; color: #4A3B2A; margin-bottom: 0.8rem; font-size: 1.05rem; }
-        .answer-space { background: white; padding: 1.2rem; border: 2px dashed #C8B79A; min-height: 100px; border-radius: 6px; color: #8A8A8A; font-style: italic; font-size: 0.98rem; }
+        .question-block { margin: 2rem 0; padding: 1.8rem; background-color: #E3D2C2; border-radius: 8px; border: 1px solid #9A9F8B; }
+        .question { font-weight: 700; color: #2B1F1A; margin-bottom: 0.8rem; font-size: 1.05rem; }
+        .answer-space { background-color: #E3D2C2; padding: 1.2rem; border: 1px solid #9A9F8B; min-height: 100px; border-radius: 4px; color: #2B1F1A; font-size: 0.98rem; }
         
         /* Timeline */
         .timeline { margin: 2.5rem 0; }
-        .timeline-item { display: flex; margin: 1.8rem 0; padding: 1.3rem; background: #FBF8F2; border-radius: 8px; border-left: 5px solid #2F4B63; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: transform 0.2s ease; }
-        .timeline-item:hover { transform: translateX(5px); }
-        .timeline-date { font-weight: 700; color: #4A3B2A; min-width: 280px; font-size: 1.02rem; }
-        .timeline-description { flex: 1; background: white; padding: 1rem; border: 2px dashed #C8B79A; border-radius: 6px; color: #8A8A8A; font-style: italic; }
+        .timeline-item { display: flex; margin: 1.8rem 0; padding: 1.3rem; background-color: #E3D2C2; border-radius: 8px; border: 1px solid #9A9F8B; border-left: 4px solid #6B2E1E; }
+        .timeline-item:hover { border-left-width: 6px; }
+        .timeline-date { font-weight: 700; color: #B08A7A; min-width: 280px; font-size: 1.02rem; }
+        .timeline-description { flex: 1; background-color: #E3D2C2; padding: 1rem; border: 1px solid #9A9F8B; border-radius: 4px; color: #2B1F1A; }
         
         /* OPCVL Table */
-        .opcvl-table { width: 100%; border-collapse: collapse; margin: 2rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
-        .opcvl-table th { background: linear-gradient(to bottom, #4A3B2A 0%, #3d3020 100%); color: #FBF8F2; padding: 1.2rem; text-align: left; font-weight: 600; font-size: 1.05rem; }
-        .opcvl-table td { border: 2px dashed #C8B79A; padding: 1.2rem; background: white; color: #8A8A8A; font-style: italic; }
+        .opcvl-table { width: 100%; border-collapse: collapse; margin: 2rem 0; border-radius: 8px; overflow: hidden; }
+        .opcvl-table th { background-color: #E3D2C2; color: #2B1F1A; padding: 1.2rem; text-align: left; font-weight: 600; font-size: 1.05rem; border: 1px solid #9A9F8B; }
+        .opcvl-table td { border: 1px solid #9A9F8B; padding: 1.2rem; background-color: #E3D2C2; color: #2B1F1A; }
         
         /* Source Info */
-        .source-info { background: linear-gradient(to right, #FBF8F2 0%, #F4EFE6 100%); padding: 1.8rem; border-radius: 8px; margin: 2rem 0; border: 2px solid #C8B79A; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
-        .source-info p { margin: 0.6rem 0; line-height: 1.6; }
-        .source-info strong { color: #4A3B2A; font-weight: 700; }
+        .source-info { background-color: #E3D2C2; padding: 1.8rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #9A9F8B; }
+        .source-info p { margin: 0.6rem 0; line-height: 1.6; color: #2B1F1A; }
+        .source-info strong { color: #2B1F1A; font-weight: 700; }
         .source-info ul { margin-left: 1.8rem; margin-top: 0.8rem; }
-        .source-info li { margin: 0.5rem 0; color: #2E2E2E; }
+        .source-info li { margin: 0.5rem 0; color: #2B1F1A; }
         
         /* Dividers */
-        .section-divider { border: none; border-top: 3px solid #C8B79A; margin: 3.5rem 0; opacity: 0.7; }
+        .section-divider { border: none; border-top: 2px solid #B08A7A; margin: 3.5rem 0; }
         
         /* Event Header */
-        .event-header { background: linear-gradient(135deg, #2F4B63 0%, #1F3547 100%); color: #FBF8F2; padding: 2.5rem; border-radius: 10px; margin-bottom: 2.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border-bottom: 4px solid #8C3A2B; }
-        .event-header h2 { color: #FBF8F2; border: none; margin: 0; font-size: 2.2rem; }
+        .event-header { background-color: #6B2E1E; color: #E3D2C2; padding: 2.5rem; border-radius: 8px; margin-bottom: 2.5rem; border-bottom: 3px solid #B08A7A; }
+        .event-header h2 { color: #E3D2C2; border: none; margin: 0; font-size: 2.2rem; }
         
         /* Reflection Space */
-        .reflection-space { background: linear-gradient(to bottom, #FBF8F2 0%, #fff9e6 100%); border: 3px solid #8C3A2B; padding: 2.5rem; border-radius: 10px; margin: 2.5rem 0; box-shadow: 0 3px 10px rgba(140, 58, 43, 0.15); }
-        .reflection-space h3 { color: #8C3A2B; margin-top: 0; font-size: 1.6rem; }
+        .reflection-space { background-color: #E3D2C2; border: 1px solid #9A9F8B; border-left: 4px solid #6B2E1E; padding: 2.5rem; border-radius: 8px; margin: 2.5rem 0; }
+        .reflection-space h3 { color: #2B1F1A; margin-top: 0; font-size: 1.6rem; }
         .reflection-space ul { margin-left: 1.8rem; margin-top: 0.8rem; }
-        .reflection-space li { margin: 0.5rem 0; color: #2E2E2E; }
+        .reflection-space li { margin: 0.5rem 0; color: #2B1F1A; }
         
         /* Visual Placeholder */
-        .visual-placeholder { width: 100%; height: 350px; background: linear-gradient(135deg, #F4EFE6 0%, #e8e0d0 100%); border: 3px dashed #C8B79A; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin: 1.5rem 0; color: #8A8A8A; font-style: italic; text-align: center; padding: 2.5rem; font-size: 1.1rem; }
+        .visual-placeholder { width: 100%; height: 350px; background-color: #E3D2C2; border: 1px solid #9A9F8B; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin: 1.5rem 0; color: #2B1F1A; font-style: italic; text-align: center; padding: 2.5rem; font-size: 1.1rem; }
         
         /* Links */
-        a:not(nav a):not(.image-caption a) { color: #2F4B63; text-decoration: none; border-bottom: 1px solid transparent; transition: all 0.2s ease; }
-        a:not(nav a):not(.image-caption a):hover { color: #1F3547; border-bottom-color: #1F3547; }
+        a:not(nav a):not(.image-caption a) { color: #6B2E1E; text-decoration: underline; }
+        a:not(nav a):not(.image-caption a):hover { color: #B08A7A; }
         
         /* Responsive */
         @media (max-width: 768px) {
@@ -123,19 +123,19 @@
                 <h2>Related Questions</h2>
                 <div class="question-block">
                     <div class="question">Factual Question: What were the key causes of the Great Depression?</div>
-                    <div class="answer-space">[Your answer here - minimum one succinct and well-articulated sentence]</div>
+                    <div class="answer-space">The Great Depression was caused by several economic problems coming together, including the 1929 stock market crash, overproduction of goods, weak and poorly regulated banks, unequal distribution of wealth, declining consumer spending, and a delayed government response.</div>
                 </div>
                 <div class="question-block">
                     <div class="question">Conceptual Question: How does government intervention impact economic recovery and social wellbeing?</div>
-                    <div class="answer-space">[Your answer here - minimum one succinct and well-articulated sentence]</div>
+                    <div class="answer-space">Government intervention affects economic recovery and social wellbeing by stabilizing markets, creating jobs, supporting those most affected, and rebuilding trust during periods of economic crisis.</div>
                 </div>
                 <div class="question-block">
                     <div class="question">Debatable Question: Did the New Deal effectively resolve the challenges of the Great Depression? Why or why not?</div>
-                    <div class="answer-space">[Your answer here - minimum one succinct and well-articulated sentence]</div>
+                    <div class="answer-space">The New Deal did not completely end the Great Depression, but it reduced widespread suffering, stabilized key parts of the economy, expanded social programs, and reshaped the federal government's role in addressing economic and social problems, helping support long term recovery.</div>
                 </div>
                 <div class="question-block">
                     <div class="question">Faith-Related Question: How do Christian principles of stewardship and care for others align with responses to economic crises?</div>
-                    <div class="answer-space">[Your answer here - minimum one succinct and well-articulated sentence]</div>
+                    <div class="answer-space">Christian principles of care for others connect to responses during economic crises by encouraging responsible use of resources, compassion for those in need, and shared responsibility, reflecting biblical teachings about justice and love for others.</div>
                 </div>
                 
                 <hr class="section-divider">
@@ -144,31 +144,31 @@
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-date">October 29, 1929 - Black Tuesday</div>
-                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                        <div class="timeline-description">The stock market crashed as investors rushed to sell their shares, causing massive financial losses and pushing the United States deeper into economic crisis.</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">November 8, 1932 - Franklin D. Roosevelt elected POTUS</div>
-                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                        <div class="timeline-description">Franklin D. Roosevelt was elected during the worst years of the Great Depression after promising stronger government action to address economic hardship.</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">March 4, 1933 - Franklin D. Roosevelt inaugurated POTUS</div>
-                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                        <div class="timeline-description">Franklin D. Roosevelt took office as unemployment, bank failures, and economic uncertainty affected millions of Americans.</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">March 6-13, 1933 - Bank Holiday</div>
-                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                        <div class="timeline-description">A nationwide bank holiday temporarily closed banks to stop panic withdrawals and restore trust in the banking system.</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">March 12, 1933 - FDR's first 'Fireside Chat'</div>
-                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                        <div class="timeline-description">Franklin D. Roosevelt spoke directly to Americans over the radio, explaining the banking crisis in clear language and reassuring the public.</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">April 14, 1935 - Black Sunday</div>
-                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                        <div class="timeline-description">A powerful dust storm swept across the Great Plains, showing the severe environmental damage and human suffering caused by the Dust Bowl.</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">August 14, 1935 - Social Security Act signed into Law</div>
-                        <div class="timeline-description">[Write a one sentence description of the event]</div>
+                        <div class="timeline-description">The Social Security Act created federal programs to support the elderly, unemployed, and disabled, marking a major expansion of the government's role during the Great Depression.</div>
                     </div>
                 </div>
                 
@@ -189,20 +189,216 @@
         </div>
     </div>
 
+    <!-- Event 1: The Great Depression - Manually created with filled responses -->
+    <div id="event1">
+        <div class="container">
+            <div class="page-section">
+                <div class="event-header"><h2>Event #1: The Great Depression</h2></div>
+                
+                <h2>SECTION 1: Exploring Macro Concepts</h2>
+                <div class="inquiry-statement"><strong>Inquiry Statement:</strong> Societal responses to crises, such as the Great Depression, reveal the evolving dynamics of systems and human resilience, reflecting historical lessons applicable to modern economic challenges.</div>
+                
+                <div class="question-block">
+                    <div class="question">Factual Question: What were the main causes of the Great Depression?</div>
+                    <div class="answer-space">The Great Depression was caused by several economic problems happening at the same time, including the 1929 stock market crash, overproduction of goods, weak banking systems, unequal distribution of wealth, and a major drop in consumer spending. As banks failed and businesses closed, unemployment rose quickly, making the economic crisis even worse.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">Conceptual Question: How do economic policies impact global interactions and societies, as well as individuals?</div>
+                    <div class="answer-space">Economic policies affect how societies respond to hardship and how countries interact with one another. Strong and balanced policies can stabilize markets, support cooperation between nations, and protect citizens during crises, while weak policies can lead to instability and global tension. On an individual level, these policies influence job security, income, and access to basic needs.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">Debatable Question: Is the impact of the Great Depression a testament to the failure of capitalist economic structures? When might we see the next economic depression?</div>
+                    <div class="answer-space">The Great Depression revealed serious weaknesses in largely unregulated capitalism rather than proving that capitalism itself had failed. The crisis showed the need for regulation and protections to prevent extreme economic collapse. Another major depression could occur if financial systems become unstable again due to poor regulation, excessive risk taking, or major global shocks, though stronger institutions today may lower the chances.</div>
+                </div>
+                
+                <hr class="section-divider">
+                <h2>SECTION 2: Exploring Primary & Secondary Sources</h2>
+                
+                <h3>Primary Source Document #1</h3>
+                <div class="source-info">
+                    <p><strong>Choose ONE of the following Primary Sources:</strong></p>
+                    <ul>
+                        <li>Doc 1: Herbert Hoover's "Rugged Individualism" speech</li>
+                        <li>Doc 2: Letter to President Roosevelt</li>
+                        <li>Doc 3: "Begging," article by Anne Winn Stevens</li>
+                        <li>Doc 4: The 'Bonus Army' invades Washington, D.C.</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Selected Source:</strong> Herbert Hoover, "Rugged Individualism" Campaign Speech (https://www.digitalhistory.uh.edu/disp_textbook_print.cfm?smtid=3&psid=1334)</p>
+                </div>
+                <h4>OPCVL Chart</h4>
+                <table class="opcvl-table">
+                    <thead><tr><th>Origin</th><th>Purpose</th><th>Content</th><th>Value</th><th>Limitations</th></tr></thead>
+                    <tbody><tr>
+                        <td>This source is a campaign speech delivered in 1928 by Herbert Hoover during the final stage of his presidential campaign. Hoover was the Republican nominee and former Secretary of Commerce, and the speech reflects his political and economic views before the Great Depression began.</td>
+                        <td>The purpose of the speech was to persuade voters to support Hoover's vision of government based on rugged individualism, self-reliance, and limited federal involvement in the economy. Hoover aimed to defend the American economic system and warn against increased government control and socialist ideas.</td>
+                        <td>The document argues that American progress is rooted in individual freedom, equal opportunity, and private enterprise. Hoover criticizes the growth of government power during World War I and claims that continued government involvement in business would threaten liberty and self-government. Throughout the speech, he compares American individualism with European state controlled systems and stresses that economic freedom is necessary for national success.</td>
+                        <td>This source is valuable because it clearly explains Hoover's economic beliefs just before the Great Depression and helps explain his later resistance to direct federal relief. It provides insight into how many Americans viewed government intervention in the late 1920s and shows the beliefs shaping early responses to economic crisis.</td>
+                        <td>The source is limited because it presents only Hoover's perspective as a political candidate and does not reflect the experiences of Americans who later faced widespread poverty and unemployment. Since it was written before the Great Depression, it underestimates how severe the crisis would become and the limits of rugged individualism during a national emergency.</td>
+                    </tr></tbody>
+                </table>
+                <h4>Analysis Questions</h4>
+                <div class="question-block">
+                    <div class="question">1. How might this source have influenced people's opinions, actions, or beliefs when it was released?</div>
+                    <div class="answer-space" style="min-height:150px;">When this speech was released, it likely strengthened public support for limited government and personal responsibility. Hoover's focus on freedom and opportunity may have reassured voters that the American economic system was strong and able to continue growing. This message encouraged confidence in private business and voluntary action rather than federal involvement.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">2. How does understanding the historical context change your interpretation of this source, or the historical event?</div>
+                    <div class="answer-space" style="min-height:150px;">Knowing that this speech was delivered before the Great Depression changes how it is understood. At the time, economic growth made Hoover's arguments seem reasonable and hopeful. Viewed later, the speech shows how existing economic ideas were not prepared for a crisis of such size, helping explain why early responses to the Depression were limited.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">3. How does this document either affirm or negate our current understanding of the event? What (if anything) has changed in our understanding of the event since this source was created?</div>
+                    <div class="answer-space" style="min-height:150px;">The document supports the understanding that early responses to the Great Depression were shaped by strong belief in individualism and limited government. However, modern interpretations recognize that these beliefs were not enough to address mass unemployment and economic collapse. Since this speech was written, economic thinking has shifted toward accepting a larger government role during major crises.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">4. What new questions does this source make you want to explore or research further?</div>
+                    <div class="answer-space" style="min-height:150px;">This source raises questions about when limited government stops being effective during national emergencies. It also encourages further research into how public opinion changed as the Great Depression worsened and how Hoover's ideas compared with later New Deal policies.</div>
+                </div>
+                
+                <hr class="section-divider">
+                <h3>Primary Source Document #2 - JSTOR Article</h3>
+                <div class="source-info">
+                    <p><strong>Instructions:</strong> Use JSTOR to search for a source related to "The Great Depression"</p>
+                    <p><strong>Selected Source:</strong> Edwin F. Gay, "The Great Depression" (1932), Foreign Affairs - https://www.jstor.org/stable/20030459</p>
+                </div>
+                <h4>OPCVL Chart</h4>
+                <table class="opcvl-table">
+                    <thead><tr><th>Origin</th><th>Purpose</th><th>Content</th><th>Value</th><th>Limitations</th></tr></thead>
+                    <tbody><tr>
+                        <td>This source is an article written in 1932 by economist Edwin F. Gay and published in Foreign Affairs, a respected academic journal. It was written while the Great Depression was still ongoing.</td>
+                        <td>The purpose of the article is to explain why the Great Depression was unusually severe and widespread. Gay attempts to help readers understand the deeper economic problems behind the crisis rather than viewing it as a short-term downturn.</td>
+                        <td>The article explains the Great Depression as a global economic collapse caused by several connected factors, including unstable credit systems, overproduction, war debts, and disruptions to international trade. Gay argues that the Depression was not a normal business cycle and that its effects spread across nations because economies were closely connected.</td>
+                        <td>This source is valuable because it provides an economic analysis written during the Great Depression itself. It shows how experts at the time understood the crisis and highlights the global nature of the Depression, helping explain why recovery was slow and difficult.</td>
+                        <td>The source is limited because it was written before the full outcome of the Great Depression was known. Since the crisis was still unfolding, the author could not evaluate long term recovery efforts or later government policies. The article also focuses more on economic systems than on everyday personal experiences.</td>
+                    </tr></tbody>
+                </table>
+                <h4>Analysis Questions</h4>
+                <div class="question-block">
+                    <div class="question">1. How might this source have influenced people's opinions, actions, or beliefs when it was released?</div>
+                    <div class="answer-space" style="min-height:150px;">When this article was published in 1932, it likely influenced policymakers and educated readers by showing that the Great Depression was deeper and more complex than earlier economic crises. By stressing global connections and economic weaknesses, the source may have encouraged support for broader reforms rather than short term solutions.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">2. How does understanding the historical context change your interpretation of this source, or the historical event?</div>
+                    <div class="answer-space" style="min-height:150px;">Knowing that the article was written during the height of the Great Depression helps explain its serious and uncertain message. At the time, recovery was unclear, and traditional economic explanations were not working. This context helps explain the author's focus on widespread instability.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">3. How does this document either affirm or negate our current understanding of the event? What (if anything) has changed in our understanding of the event since this source was created?</div>
+                    <div class="answer-space" style="min-height:150px;">The document supports the modern view that the Great Depression had multiple causes and was a global crisis rather than only an American one. Since the article was written, historical understanding has expanded to include the role of government action and social impacts, which are not fully covered in the source.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">4. What new questions does this source make you want to explore or research further?</div>
+                    <div class="answer-space" style="min-height:150px;">This source raises questions about how international economic systems can be better supported during times of crisis. It also encourages further research into how financial systems and credit markets can be managed to prevent future global economic collapses.</div>
+                </div>
+                
+                <hr class="section-divider">
+                <h3>Primary Source Document #3 - Non-Text Source</h3>
+                <div class="source-info">
+                    <p><strong>Choose ONE non-text oriented source:</strong> Political cartoon, photograph, archival footage, or advertising from the time of the historical event</p>
+                    <p><strong>Selected Source:</strong> Franklin D. Roosevelt Fireside Chat Photograph (https://www.stlouisfed.org/-/media/project/frbstl/stlouisfed/great-depression/gallery/fdr_fireside_chat.jpg)</p>
+                </div>
+                <div style="width: 100%; margin: 1.5rem 0; text-align: center;">
+                    <img src="https://i.imgur.com/FeozSlG.jpeg" alt="Franklin D. Roosevelt delivering a Fireside Chat" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #9A9F8B;">
+                </div>
+                <h4>OPCVL Chart</h4>
+                <table class="opcvl-table">
+                    <thead><tr><th>Origin</th><th>Purpose</th><th>Content</th><th>Value</th><th>Limitations</th></tr></thead>
+                    <tbody><tr>
+                        <td>This source is a historical photograph taken in the early 1930s during the Great Depression showing Franklin D. Roosevelt delivering a fireside chat over the radio. The image comes from the St. Louis Federal Reserve's Great Depression photo archive and was created during Roosevelt's presidency.</td>
+                        <td>The purpose of this photograph is to document Roosevelt speaking directly to the American public through radio broadcasts. Fireside chats were meant to calm fears, explain government actions, and rebuild trust in the banking system and the federal government during a time of widespread economic uncertainty.</td>
+                        <td>The image shows President Roosevelt seated at a desk with multiple microphones labeled with major radio networks. He appears focused and composed, emphasizing the seriousness of the message he was delivering. The setting highlights the importance of radio as a primary way to reach millions of Americans during the Great Depression.</td>
+                        <td>This source is valuable because it shows how Roosevelt used communication as a tool to address the economic crisis. It helps explain how leadership and public reassurance became part of the government's response to the Great Depression. The photograph also shows the role of mass media in shaping public confidence during national emergencies.</td>
+                        <td>The source is limited because it does not capture the actual words spoken during the fireside chat or the reactions of listeners. As a photograph, it only shows one moment and cannot fully convey how effective the message was or how different groups of Americans responded to Roosevelt's leadership.</td>
+                    </tr></tbody>
+                </table>
+                <h4>Analysis Questions</h4>
+                <div class="question-block">
+                    <div class="question">1. Source Description: Describe the source (including media type, year, and a general description).</div>
+                    <div class="answer-space" style="min-height:150px;">This source is a black and white photograph from the early 1930s showing President Franklin D. Roosevelt delivering a fireside chat during the Great Depression. The image captures Roosevelt speaking into several radio microphones, which represents how radio was used to communicate with Americans nationwide. The photograph reflects the seriousness of the moment and the importance of direct communication during the economic crisis.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">2. Making Inferences: What inferences can you draw based on the source and your prior knowledge of the historical event?</div>
+                    <div class="answer-space" style="min-height:150px;">Based on the photograph and historical knowledge, it can be inferred that Roosevelt understood the need to personally reassure the public during the Great Depression. The presence of multiple microphones suggests that his message was broadcast widely, showing an effort to reach as many Americans as possible. This supports the idea that leadership during the Depression involved not only policy changes but also rebuilding trust and confidence.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">3. Revisiting the Event: How have attitudes or information changed since the time the original source was created?</div>
+                    <div class="answer-space" style="min-height:150px;">Since the time this photograph was taken, attitudes toward government communication have changed with the rise of television, the internet, and social media. Today, leaders use many platforms to address the public instantly, rather than relying mainly on radio. However, the importance of clear and calming communication during crises remains the same, showing that Roosevelt's approach still influences how leaders respond to national emergencies.</div>
+                </div>
+                
+                <hr class="section-divider">
+                <h2>SECTION 3: Interpreting Visual Data</h2>
+                <div class="source-info">
+                    <p><strong>Source Title:</strong> U.S. Unemployment Rate, 1930-1945</p>
+                    <p><strong>Source Type:</strong> Graph (visual data)</p>
+                    <p><strong>Source Link:</strong> <a href="https://shec.ashp.cuny.edu/items/show/1510" target="_blank">https://shec.ashp.cuny.edu/items/show/1510</a></p>
+                    <p><strong>Source Date:</strong> 1930-1945 (data range)</p>
+                </div>
+                <div style="width: 100%; margin: 1.5rem 0; text-align: center;">
+                    <img src="https://i.imgur.com/hCLasvV.jpeg" alt="U.S. Unemployment Rate, 1930-1945" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #9A9F8B;">
+                </div>
+                <div class="question-block">
+                    <div class="question">1. In a single, succinct sentence summarize the data's CONTENT.</div>
+                    <div class="answer-space">The graph shows the percentage of unemployed Americans each year from 1930 to 1945, covering the Great Depression and the years leading into World War II.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">2. In a single, succinct sentence summarize the data's FINDINGS.</div>
+                    <div class="answer-space">The data shows unemployment rising sharply during the early 1930s, peaking around 1933, and then gradually declining as economic conditions improved and wartime production increased.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">3. Based on the data's SOURCE (how the source gathers and calculates its data), should the data be deemed reliable or unreliable? Why?</div>
+                    <div class="answer-space">The data should be considered reliable because it is hosted by an academic institution and is based on historical unemployment statistics collected and calculated using government records and economic data from the period.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">4. When it comes to the data, what do you find most interesting or surprising? Explain.</div>
+                    <div class="answer-space">The most interesting part of the data is how high unemployment remained even several years after the worst point of the Great Depression, showing that recovery was slow and uneven. It is also surprising how sharply unemployment dropped during World War II, which highlights how government spending and industrial demand can quickly change economic conditions.</div>
+                </div>
+                
+                <hr class="section-divider">
+                <h2>SECTION 4: Connecting the Historical Event to Today</h2>
+                <div class="source-info">
+                    <p><strong>Find a credible article from 2020 or later related to this historical event or theme</strong></p>
+                    <p><strong>Source Title:</strong> Great Depression</p>
+                    <p><strong>Source Type:</strong> Reference article (secondary source)</p>
+                    <p><strong>Source Link:</strong> <a href="https://www.britannica.com/event/Great-Depression" target="_blank">https://www.britannica.com/event/Great-Depression</a></p>
+                    <p><strong>Source Date:</strong> Last updated December 6, 2025</p>
+                </div>
+                <h4>OPCVL Chart</h4>
+                <table class="opcvl-table">
+                    <thead><tr><th>Origin</th><th>Purpose</th><th>Content</th><th>Value</th><th>Limitations</th></tr></thead>
+                    <tbody><tr>
+                        <td>This source is a reference article from Encyclopaedia Britannica, a trusted academic encyclopedia. The article has been updated by historians and editors to reflect current research and understanding of the Great Depression.</td>
+                        <td>The purpose of this article is to explain what caused the Great Depression, how it developed, and why it had such lasting effects. It is meant to inform readers by giving a clear and balanced overview of the event.</td>
+                        <td>The article explains how the Great Depression began after the stock market crash of 1929 and spread through bank failures, reduced spending, falling production, and a collapse in global trade. It also describes the social impact of the Depression and explains how governments responded, especially through New Deal programs in the United States.</td>
+                        <td>This source is valuable because it offers a clear and up to date summary of the Great Depression using modern historical research. It helps connect the events of the past to present day discussions about economic stability, government action, and financial regulation.</td>
+                        <td>The source is limited because it focuses on the overall event rather than individual experiences. While it explains major economic trends and policies well, it does not go deeply into personal stories or local impacts.</td>
+                    </tr></tbody>
+                </table>
+                <div class="question-block">
+                    <div class="question">1. Is this article a report (fact-based, current events), feature article (in-depth, human interest, or investigative), or an opinion piece (editorials, columns, and letters to the editor)? How can you tell?</div>
+                    <div class="answer-space" style="min-height:120px;">This article is a feature style reference article, not a report or opinion piece. It does not argue a personal viewpoint or focus on current events. Instead, it presents researched information in a neutral tone, showing that the goal is to explain the topic rather than persuade the reader.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">2. Explain why you agree - or disagree - with the author's perspective.</div>
+                    <div class="answer-space" style="min-height:120px;">The explanation in the article is convincing because it shows that the Great Depression had many connected causes, not just one. By discussing economic policies, global trade, and social effects, the article provides a balanced view that helps explain why the crisis became so severe.</div>
+                </div>
+                <div class="question-block">
+                    <div class="question">3. If given the opportunity to ask the author about his/her article, what open-ended question would you ask?</div>
+                    <div class="answer-space" style="min-height:120px;">One question to ask the author would be how lessons from the Great Depression are being used today to respond to modern economic crises. This could help show how history continues to influence decisions about government involvement and economic recovery.</div>
+                </div>
+                
+                <hr class="section-divider">
+                <h2>SECTION 5: So What? Why is this relevant today?</h2>
+                <div class="answer-space" style="min-height:350px;">
+                    <p style="margin-bottom: 1rem;">The Great Depression is still relevant today because it shows how quickly economic problems can grow when major warning signs are ignored. In the early 1930s, weak banking systems, unregulated financial markets, and unequal wealth distribution combined to create massive unemployment and poverty. As banks failed and businesses closed, everyday life was affected almost immediately. These events show how closely financial systems are tied to people's basic needs and why economic safeguards matter.</p>
+
+                    <p style="margin-bottom: 1rem;">The Great Depression also highlights the role government action can play during a crisis. Early responses that avoided strong intervention allowed economic conditions to worsen, while later New Deal programs helped stabilize the economy and restore confidence. Actions such as bank reform, public work programs, and the creation of Social Security helped reduce suffering and support recovery. These examples continue to shape how governments respond to modern economic challenges, including recessions and financial downturns.</p>
+
+                    <p>Finally, the Great Depression remains important because it reveals the long lasting effects of economic hardship on society. Many families faced hunger, homelessness, and uncertainty even after the economy began to recover. Similar concerns appear today during periods of inflation, job loss, and global instability. Studying the Great Depression helps apply lessons about economic responsibility, fairness, and resilience to current and future challenges.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         const events = [
-            {
-                id: 'event1',
-                num: 1,
-                name: 'The Great Depression',
-                inquiry: 'Societal responses to crises, such as the Great Depression, reveal the evolving dynamics of systems and human resilience, reflecting historical lessons applicable to modern economic challenges.',
-                questions: [
-                    'Factual Question: What were the main causes of the Great Depression?',
-                    'Conceptual Question: How do economic policies impact global interactions and societies, as well as individuals?',
-                    'Debatable Question: Is the impact of the Great Depression a testament to the failure of capitalist economic structures? When might we see the next economic depression?'
-                ],
-                sources: ['Doc 1: Herbert Hoover\'s "Rugged Individualism" speech', 'Doc 2: Letter to President Roosevelt', 'Doc 3: "Begging," article by Anne Winn Stevens', 'Doc 4: The \'Bonus Army\' invades Washington, D.C.']
-            },
             {
                 id: 'event2',
                 num: 2,
